@@ -1,0 +1,15 @@
+{
+    "manifest_version":2,
+    "name":"Social modify",
+    "version":"1.0",
+    "description":"Nicer ui for hackernews and twitter.",
+    "icons": {
+        "48": "icon.png"
+    },
+    "content_scripts" :[
+        {
+            "matches":["https://news.ycombinator.com/*", "https://twitter.com/*"],
+            "js":["script.js"]
+        }
+    ]
+}

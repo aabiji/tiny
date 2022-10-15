@@ -1,0 +1,94 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	min-width: 375px;
+	min-height: 500px;
+	color: #ffffff;;
+	background-color: #000000;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	background-color: #000000;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 50px;
+	transition: all 0.2s linear 0s;
+	font-size: 2em;
+	transform: rotate(90deg);
+}
+
+button:click {
+	background-color: #9a2fd4;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#turn_text {
+	color: white;
+	font-size: 1.25em;
+	margin-top: 5%;
+}
+
+#board {
+	display: grid;
+	width: 375px;
+	height: 375px;
+	grid-template-columns: auto auto auto;
+	border: none;
+	border-radius: 20px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.selling_point {
+	font-size: 1em;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width : 125px;
+	height: 125px;
+	border: 3px solid white;
+	text-align: center;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+.cell:hover {
+	cursor: pointer;
+}
+
+#b0,
+#b1,
+#b2 {
+	border-top: none;
+}
+
+#b0,
+#b3,
+#b6 {
+	border-left: none;
+}
+
+#b2,
+#b5,
+#b8 {
+	border-right: none;
+}
+
+#b6,
+#b7,
+#b8 {
+	border-bottom: none;
+}
