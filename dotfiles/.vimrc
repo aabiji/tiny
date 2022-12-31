@@ -1,5 +1,6 @@
-colorscheme codedark
 set termguicolors
+colorscheme titan
+set background=dark
 set number
 set t_co=256
 syntax on
@@ -20,20 +21,24 @@ set nowb
 set ignorecase
 set nocompatible
 set showtabline=2
+
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
-cnoremap q qa
-cnoremap w wa
-cnoremap wq xa
+
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
 Plug 'bfrg/vim-cpp-modern'
+Plug 'preservim/nerdtree'
 call plug#end()
 
-let g:airline_theme='atomic'
+let g:airline_theme='minimalist'
 let g:python_highlight_all = 1
 
 let g:go_highlight_array_whitespace_error = 0
